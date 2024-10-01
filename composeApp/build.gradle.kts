@@ -63,6 +63,10 @@ kotlin {
             implementation(libs.oshi.core)
         }
     }
+
+    compilerOptions {
+        freeCompilerArgs.add("-Xexpect-actual-classes")
+    }
 }
 
 android {
